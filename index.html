@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tezos Reward Distributor : Run &amp; Forget &mdash; Tezos Reward Distributor 2.0 documentation</title>
+  <title>Tezos Reward Distributor (Run &amp; Forget) &mdash; Tezos Reward Distributor 2.0 documentation</title>
   
 
   
@@ -84,17 +84,25 @@
             
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Tezos Reward Distributor : Run &amp; Forget </a></li>
-<li><a class="reference internal" href="#tezos-reward-distributor">Tezos Reward Distributor</a></li>
-<li><a class="reference internal" href="#trd-art-work">TRD Art Work</a><ul>
-<li><a class="reference internal" href="#requirements-and-setup">Requirements and Setup:</a></li>
-<li><a class="reference internal" href="#how-to-run">How to Run:</a></li>
+<li><a class="reference internal" href="#">Tezos Reward Distributor (Run &amp; Forget) </a><ul>
+<li><a class="reference internal" href="#what-is-tezos-reward-distributor">What is Tezos Reward Distributor?</a></li>
+<li><a class="reference internal" href="#how-to-get-and-install-tezos-reward-distributor">How to get and install Tezos Reward Distributor?</a><ul>
+<li><a class="reference internal" href="#requirements-and-setup">Requirements and Setup</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-configure-tezos-reward-distributor">How to configure Tezos Reward Distributor?</a><ul>
 <li><a class="reference internal" href="#baker-configuration">Baker Configuration:</a></li>
-<li><a class="reference internal" href="#linux-service">Linux Service</a></li>
 <li><a class="reference internal" href="#email-setup">Email Setup</a></li>
 <li><a class="reference internal" href="#fee-setup">Fee Setup</a></li>
-<li><a class="reference internal" href="#contributions">Contributions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-run-tezos-reward-distributor">How to run Tezos Reward Distributor?</a><ul>
+<li><a class="reference internal" href="#linux-service">Linux Service</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#for-developers">For developers</a></li>
 <li><a class="reference internal" href="#funding">Funding</a></li>
+<li><a class="reference internal" href="#trd-art-work">TRD Art Work</a></li>
 </ul>
 </li>
 </ul>
@@ -142,7 +150,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>Tezos Reward Distributor : Run &amp; Forget </li>
+      <li>Tezos Reward Distributor (Run &amp; Forget) </li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -162,31 +170,26 @@
            <div itemprop="articleBody">
             
   <div class="section" id="tezos-reward-distributor-run-forget-build-status">
-<h1>Tezos Reward Distributor : Run &amp; Forget <a class="reference external" href="https://travis-ci.com/habanoz/tezos-reward-distributor"><img alt="Build Status" src="https://travis-ci.com/habanoz/tezos-reward-distributor.svg?branch=development" /></a><a class="headerlink" href="#tezos-reward-distributor-run-forget-build-status" title="Permalink to this headline">¶</a></h1>
+<h1>Tezos Reward Distributor (Run &amp; Forget) <a class="reference external" href="https://travis-ci.com/habanoz/tezos-reward-distributor"><img alt="Build Status" src="https://travis-ci.com/habanoz/tezos-reward-distributor.svg?branch=development" /></a><a class="headerlink" href="#tezos-reward-distributor-run-forget-build-status" title="Permalink to this headline">¶</a></h1>
 <p>DISCLAIMER : TEZOS REWARD DISTRIBUTOR IS PROVIDED AS IS. IT IS UNDER
 CONSTANT DEVELOPMENT. EVENT THOUGH IT IS WELL TESTED, PLEASE USE WITH
 CARE. ALWAYS MAKE A PRE-RUN IN DRY MODE BEFORE MAKING ACTUAL PAYMENTS.
 IF YOU WANT TO RUN IN SERVICE MODE DO IT AFTER YOU ARE CONFIDENT WITH
 THE APPLICATION. IN SERVICE MODE DO NOT UPDATE OFTEN.</p>
-</div>
-<div class="section" id="tezos-reward-distributor">
-<h1>Tezos Reward Distributor<a class="headerlink" href="#tezos-reward-distributor" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-tezos-reward-distributor">
+<h2>What is Tezos Reward Distributor?<a class="headerlink" href="#what-is-tezos-reward-distributor" title="Permalink to this headline">¶</a></h2>
 <p>TRD is a software for distributing baking rewards with delegators. This
 is not a script but a full scale application which can run in the
 background all the time. It can track cycles and make payments. It does
 not have to be used as a service, It can also be used interactively.</p>
 <p>TRD supports complex payments, pays in batches, provides two back ends
-for calculations: rpc and tzcan. Developped and tested extensively by
-the community. For more information please check following article.</p>
-<p><a class="reference external" href="https://medium.com/&#64;huseyinabanox/tezos-reward-distributor-e6588c4d27e7">https://medium.com/&#64;huseyinabanox/tezos-reward-distributor-e6588c4d27e7</a></p>
+for calculations: rpc and tzcan. It was developed and tested extensively by
+the community. For more information, please check following Medium <a class="reference external" href="https://medium.com/&#64;huseyinabanox/tezos-reward-distributor-e6588c4d27e7">article</a> and the source code which can be found in the following <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor">Github</a> repo.</p>
 </div>
-<div class="section" id="trd-art-work">
-<h1>TRD Art Work<a class="headerlink" href="#trd-art-work" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://github.com/habanoz/trd-art">https://github.com/habanoz/trd-art</a> contains logo images. If you are
-using TRD and want to let everybody know about it, feel free to place
-them in your website.</p>
+<div class="section" id="how-to-get-and-install-tezos-reward-distributor">
+<h2>How to get and install Tezos Reward Distributor?<a class="headerlink" href="#how-to-get-and-install-tezos-reward-distributor" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="requirements-and-setup">
-<h2>Requirements and Setup:<a class="headerlink" href="#requirements-and-setup" title="Permalink to this headline">¶</a></h2>
+<h3>Requirements and Setup<a class="headerlink" href="#requirements-and-setup" title="Permalink to this headline">¶</a></h3>
 <p>Python 3 is required. You can use following commands to install.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
 <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span>
@@ -206,8 +209,38 @@ them in your website.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="how-to-run">
-<h2>How to Run:<a class="headerlink" href="#how-to-run" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="how-to-configure-tezos-reward-distributor">
+<h2>How to configure Tezos Reward Distributor?<a class="headerlink" href="#how-to-configure-tezos-reward-distributor" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="baker-configuration">
+<h3>Baker Configuration:<a class="headerlink" href="#baker-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Each baker has its own configuration and policy. A payment system should
+be flexible enough to cover needs of bakers. The application uses a yaml
+file for loading baker specific configurations.</p>
+<p>Configuration tool can be used to create baking configuration file
+interactively. Also an example configuration file is present under
+examples directory. For more information on configuration details, please
+see our wiki <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Configuration">page</a>.</p>
+<p>TRD is designed to work as a linux service. It expects use of tezos
+signer for encrypted payment accounts. Unencrypted payment accounts can
+be used without tezos signer. If a payment account is encrypted and not
+configured to be signed by tezos signer, TRD will freeze. For more
+information on payment addresses please refer to our wiki <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Payment-Address">page</a>.</p>
+</div>
+<div class="section" id="email-setup">
+<h3>Email Setup<a class="headerlink" href="#email-setup" title="Permalink to this headline">¶</a></h3>
+<p>Get emails for payment reports at each cycle. Fill email.ini file with
+your email details to receive payment emails.</p>
+</div>
+<div class="section" id="fee-setup">
+<h3>Fee Setup<a class="headerlink" href="#fee-setup" title="Permalink to this headline">¶</a></h3>
+<p>fee.ini file contains details about transaction fees. Currently the fee
+value specified under DEFAULT domain is used as fee amount. It is in
+mutez.</p>
+</div>
+</div>
+<div class="section" id="how-to-run-tezos-reward-distributor">
+<h2>How to run Tezos Reward Distributor?<a class="headerlink" href="#how-to-run-tezos-reward-distributor" title="Permalink to this headline">¶</a></h2>
 <p>For a list of parameters, run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
@@ -218,29 +251,10 @@ last payment is done.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<p>For more example commands please see wiki page:</p>
-<p><a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Run">https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Run</a></p>
-</div>
-<div class="section" id="baker-configuration">
-<h2>Baker Configuration:<a class="headerlink" href="#baker-configuration" title="Permalink to this headline">¶</a></h2>
-<p>Each baker has its own configuration and policy. A payment system should
-be flexible enough to cover needs of bakers. The application uses a yaml
-file for loading baker specific configurations.</p>
-<p>Configuration tool can be used to create baking configuration file
-interactively. Also an example configuration file is present under
-examples directory. For more information on configuration details please
-see our wiki page:
-<a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Configuration">https://github.com/habanoz/tezos-reward-distributor/wiki/Configuration</a></p>
-<p>TRD is designed to work as a linux service. It expects use of tezos
-signer for encrypted payment accounts. Unencrypted payment accounts can
-be used without tezos signer. If a payment account is encrypted and not
-configured to be signed by tezos signer, TRD will freeze. For more
-information on payment addresses please refer to our wikipage:
-<a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Payment-Address">https://github.com/habanoz/tezos-reward-distributor/wiki/Payment-Address</a></p>
-</div>
+<p>For more example commands please see wiki <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Run">page</a>.</p>
 <div class="section" id="linux-service">
-<h2>Linux Service<a class="headerlink" href="#linux-service" title="Permalink to this headline">¶</a></h2>
-<p>It is possible to add tezos-reward-distributer as a Linux service. It
+<h3>Linux Service<a class="headerlink" href="#linux-service" title="Permalink to this headline">¶</a></h3>
+<p>Alternatively, it is possible to add tezos-reward-distributer as a Linux service. It
 can run in the background.</p>
 <p>If docker is used, make sure user is in docker group</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo usermod -a -G docker $USER
@@ -251,24 +265,12 @@ the following command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">python3</span> <span class="n">service_add</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<p>For more information please refer to wiki page:</p>
-<p><a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Linux-Service">https://github.com/habanoz/tezos-reward-distributor/wiki/Linux-Service</a></p>
+<p>For more information please refer to this wiki <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Linux-Service">page</a>.</p>
 </div>
-<div class="section" id="email-setup">
-<h2>Email Setup<a class="headerlink" href="#email-setup" title="Permalink to this headline">¶</a></h2>
-<p>Get emails for payment reports at each cycle. Fill email.ini file with
-your email details to receive payment emails.</p>
 </div>
-<div class="section" id="fee-setup">
-<h2>Fee Setup<a class="headerlink" href="#fee-setup" title="Permalink to this headline">¶</a></h2>
-<p>fee.ini file contains details about transaction fees. Currently the fee
-value specified under DEFAULT domain is used as fee amount. It is in
-mutez.</p>
-</div>
-<div class="section" id="contributions">
-<h2>Contributions<a class="headerlink" href="#contributions" title="Permalink to this headline">¶</a></h2>
-<p>Please refer to contributions guide on wiki pages.</p>
-<p><a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Contribute">https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Contribute</a></p>
+<div class="section" id="for-developers">
+<h2>For developers<a class="headerlink" href="#for-developers" title="Permalink to this headline">¶</a></h2>
+<p>Please refer to contributions <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Contribute">guide</a> on wiki pages.</p>
 </div>
 <div class="section" id="funding">
 <h2>Funding<a class="headerlink" href="#funding" title="Permalink to this headline">¶</a></h2>
@@ -276,6 +278,12 @@ mutez.</p>
 by any organization. A grant request is rejected by Tezos Foundation.
 However, I will try to continue to enhance the software and support the
 community.</p>
+</div>
+<div class="section" id="trd-art-work">
+<h2>TRD Art Work<a class="headerlink" href="#trd-art-work" title="Permalink to this headline">¶</a></h2>
+<p>This Github <a class="reference external" href="https://github.com/habanoz/trd-art">Repo</a> contains logo images. If you are
+using TRD and want to let everybody know about it, feel free to place
+them in your website.</p>
 </div>
 </div>
 
