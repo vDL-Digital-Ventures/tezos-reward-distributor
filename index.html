@@ -34,7 +34,8 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to get and install Tezos Reward Distributor?" href="installation.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,31 +83,14 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Tezos Reward Distributor (Run &amp; Forget) </a><ul>
-<li><a class="reference internal" href="#what-is-tezos-reward-distributor">What is Tezos Reward Distributor?</a></li>
-<li><a class="reference internal" href="#how-to-get-and-install-tezos-reward-distributor">How to get and install Tezos Reward Distributor?</a><ul>
-<li><a class="reference internal" href="#requirements-and-setup">Requirements and Setup</a></li>
+              <p class="caption"><span class="caption-text">Tezos Reward Distributor:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">How to get and install Tezos Reward Distributor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">How to configure Tezos Reward Distributor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run.html">How to run Tezos Reward Distributor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributers.html">For developers</a></li>
 </ul>
-</li>
-<li><a class="reference internal" href="#how-to-configure-tezos-reward-distributor">How to configure Tezos Reward Distributor?</a><ul>
-<li><a class="reference internal" href="#baker-configuration">Baker Configuration:</a></li>
-<li><a class="reference internal" href="#email-setup">Email Setup</a></li>
-<li><a class="reference internal" href="#fee-setup">Fee Setup</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#how-to-run-tezos-reward-distributor">How to run Tezos Reward Distributor?</a><ul>
-<li><a class="reference internal" href="#linux-service">Linux Service</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#for-developers">For developers</a></li>
-<li><a class="reference internal" href="#funding">Funding</a></li>
-<li><a class="reference internal" href="#trd-art-work">TRD Art Work</a></li>
-</ul>
-</li>
-</ul>
-</div>
+
             
           
         </div>
@@ -185,92 +169,26 @@ not have to be used as a service, It can also be used interactively.</p>
 <p>TRD supports complex payments, pays in batches, provides two back ends
 for calculations: rpc and tzcan. It was developed and tested extensively by
 the community. For more information, please check following Medium <a class="reference external" href="https://medium.com/&#64;huseyinabanox/tezos-reward-distributor-e6588c4d27e7">article</a> and the source code which can be found in the following <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor">Github</a> repo.</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Tezos Reward Distributor:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">How to get and install Tezos Reward Distributor?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#requirements-and-setup">Requirements and Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">How to configure Tezos Reward Distributor?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#baker-configuration">Baker Configuration:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#email-setup">Email Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#fee-setup">Fee Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="run.html">How to run Tezos Reward Distributor?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="run.html#linux-service">Linux Service</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributers.html">For developers</a></li>
+</ul>
 </div>
-<div class="section" id="how-to-get-and-install-tezos-reward-distributor">
-<h2>How to get and install Tezos Reward Distributor?<a class="headerlink" href="#how-to-get-and-install-tezos-reward-distributor" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="requirements-and-setup">
-<h3>Requirements and Setup<a class="headerlink" href="#requirements-and-setup" title="Permalink to this headline">¶</a></h3>
-<p>Python 3 is required. You can use following commands to install.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span>
-</pre></div>
-</div>
-<p>Download the application repository using git clone:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">habanoz</span><span class="o">/</span><span class="n">tezos</span><span class="o">-</span><span class="n">reward</span><span class="o">-</span><span class="n">distributor</span>
-</pre></div>
-</div>
-<p>To install required modules, use pip with requirements.txt provided.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">tezos</span><span class="o">-</span><span class="n">reward</span><span class="o">-</span><span class="n">distributor</span>
-<span class="n">pip3</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
-</pre></div>
-</div>
-<p>Regulary check and upgrade to the latest available version:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="how-to-configure-tezos-reward-distributor">
-<h2>How to configure Tezos Reward Distributor?<a class="headerlink" href="#how-to-configure-tezos-reward-distributor" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="baker-configuration">
-<h3>Baker Configuration:<a class="headerlink" href="#baker-configuration" title="Permalink to this headline">¶</a></h3>
-<p>Each baker has its own configuration and policy. A payment system should
-be flexible enough to cover needs of bakers. The application uses a yaml
-file for loading baker specific configurations.</p>
-<p>Configuration tool can be used to create baking configuration file
-interactively. Also an example configuration file is present under
-examples directory. For more information on configuration details, please
-see our wiki <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Configuration">page</a>.</p>
-<p>TRD is designed to work as a linux service. It expects use of tezos
-signer for encrypted payment accounts. Unencrypted payment accounts can
-be used without tezos signer. If a payment account is encrypted and not
-configured to be signed by tezos signer, TRD will freeze. For more
-information on payment addresses please refer to our wiki <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Payment-Address">page</a>.</p>
-</div>
-<div class="section" id="email-setup">
-<h3>Email Setup<a class="headerlink" href="#email-setup" title="Permalink to this headline">¶</a></h3>
-<p>Get emails for payment reports at each cycle. Fill email.ini file with
-your email details to receive payment emails.</p>
-</div>
-<div class="section" id="fee-setup">
-<h3>Fee Setup<a class="headerlink" href="#fee-setup" title="Permalink to this headline">¶</a></h3>
-<p>fee.ini file contains details about transaction fees. Currently the fee
-value specified under DEFAULT domain is used as fee amount. It is in
-mutez.</p>
-</div>
-</div>
-<div class="section" id="how-to-run-tezos-reward-distributor">
-<h2>How to run Tezos Reward Distributor?<a class="headerlink" href="#how-to-run-tezos-reward-distributor" title="Permalink to this headline">¶</a></h2>
-<p>For a list of parameters, run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">help</span>
-</pre></div>
-</div>
-<p>The most common use case is to run in mainnet and start to make payments
-from last released rewards or continue making payments from the cycle
-last payment is done.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">py</span>
-</pre></div>
-</div>
-<p>For more example commands please see wiki <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Run">page</a>.</p>
-<div class="section" id="linux-service">
-<h3>Linux Service<a class="headerlink" href="#linux-service" title="Permalink to this headline">¶</a></h3>
-<p>Alternatively, it is possible to add tezos-reward-distributer as a Linux service. It
-can run in the background.</p>
-<p>If docker is used, make sure user is in docker group</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo usermod -a -G docker $USER
-</pre></div>
-</div>
-<p>In order to set up the service with default configuration arguments, run
-the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">python3</span> <span class="n">service_add</span><span class="o">.</span><span class="n">py</span>
-</pre></div>
-</div>
-<p>For more information please refer to this wiki <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/Linux-Service">page</a>.</p>
-</div>
-</div>
-<div class="section" id="for-developers">
-<h2>For developers<a class="headerlink" href="#for-developers" title="Permalink to this headline">¶</a></h2>
-<p>Please refer to contributions <a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Contribute">guide</a> on wiki pages.</p>
 </div>
 <div class="section" id="funding">
 <h2>Funding<a class="headerlink" href="#funding" title="Permalink to this headline">¶</a></h2>
@@ -292,6 +210,13 @@ them in your website.</p>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="How to get and install Tezos Reward Distributor?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>
