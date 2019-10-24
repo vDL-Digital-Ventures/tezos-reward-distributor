@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TRD Readme &mdash; Tezos Reward Distributor 6.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to get and install Tezos Reward Distributor?" href="installation.html" />
+    <link rel="prev" title="Tezos Reward Distributor (Run &amp; Forget)" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Tezos Reward Distributor
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tezos Reward Distributor:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">TRD Readme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">How to get and install Tezos Reward Distributor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">How to configure Tezos Reward Distributor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run.html">How to run Tezos Reward Distributor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributers.html">For developers</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Tezos Reward Distributor</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>TRD Readme</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="trd-readme">
+<h1>TRD Readme<a class="headerlink" href="#trd-readme" title="Permalink to this headline">¶</a></h1>
+<p>## Tezos Reward Distributor : Run &amp; Forget [![Build Status](<a class="reference external" href="https://travis-ci.com/habanoz/tezos-reward-distributor.svg?branch=development)](https://travis-ci.com/habanoz/tezos-reward-distributor">https://travis-ci.com/habanoz/tezos-reward-distributor.svg?branch=development)](https://travis-ci.com/habanoz/tezos-reward-distributor</a>)</p>
+<p>DISCLAIMER : TEZOS REWARD DISTRIBUTOR IS PROVIDED AS IS. IT IS UNDER CONSTANT DEVELOPMENT. EVENT THOUGH IT IS WELL TESTED, PLEASE USE WITH CARE. ALWAYS MAKE A PRE-RUN IN DRY MODE BEFORE MAKING ACTUAL PAYMENTS. IF YOU WANT TO RUN IN SERVICE MODE DO IT AFTER YOU ARE CONFIDENT WITH THE APPLICATION. IN SERVICE MODE DO NOT UPDATE OFTEN.</p>
+<p>&lt;img src=”<a class="reference external" href="https://raw.githubusercontent.com/habanoz/trd-art/master/logo-narrow/trd_512__1.png">https://raw.githubusercontent.com/habanoz/trd-art/master/logo-narrow/trd_512__1.png</a>” width=”128” /&gt;</p>
+<p>TRD is a software for distributing baking rewards with delegators. The documentation can be found [here](<a class="reference external" href="https://habanoz.github.io/tezos-reward-distributor/">https://habanoz.github.io/tezos-reward-distributor/</a>). This is not a script but a full scale application which can run in the background all the time. It can track cycles and make payments. It does not have to be used as a service, It can also be used interactively.</p>
+<p>TRD supports complex payments, pays in batches, provides two back ends for calculations: rpc and tzstats. Developed and tested extensively by the community. For more information please check following article.</p>
+<p><a class="reference external" href="https://medium.com/&#64;huseyinabanox/tezos-reward-distributor-e6588c4d27e7">https://medium.com/&#64;huseyinabanox/tezos-reward-distributor-e6588c4d27e7</a></p>
+<p>### Requirements and Setup:</p>
+<p>Python 3 is required. You can use the following commands to install it.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span>
+<span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">-y</span> <span class="pre">install</span> <span class="pre">python3-pip</span>
+<span class="pre">`</span></code></p>
+<p>Download the application repository using git clone:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/habanoz/tezos-reward-distributor</span>
+<span class="pre">`</span></code></p>
+<p>To install required modules, use pip with requirements.txt provided.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">cd</span> <span class="pre">tezos-reward-distributor</span>
+<span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span>
+<span class="pre">`</span></code></p>
+<p>Regularly check and upgrade to the latest available version:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">pull</span>
+<span class="pre">`</span></code></p>
+<p>### How to Run:</p>
+<p>For a list of parameters, run:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">python3</span> <span class="pre">src/main.py</span> <span class="pre">--help</span>
+<span class="pre">`</span></code></p>
+<p>The most common use case is to run in mainnet and start to make payments from last released rewards or continue making payments from the cycle last payment is done.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">python3</span> <span class="pre">src/main.py</span>
+<span class="pre">`</span></code></p>
+<p>For more example commands please see wiki page:</p>
+<p><a class="reference external" href="https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Run">https://github.com/habanoz/tezos-reward-distributor/wiki/How-to-Run</a></p>
+<p>### Funding</p>
+<p>TRD is an open source project and will stay like this. It is not funded by any organization. A grant request is rejected by Tezos Foundation. However, I will try to continue to enhance the software and support the community.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="How to get and install Tezos Reward Distributor?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Tezos Reward Distributor (Run &amp; Forget)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, habanoz
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
